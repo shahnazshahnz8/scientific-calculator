@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ </head>
+ <body class="min-h-screen flex justify-center items-center">
+    <div class="w-full max-w-sm bg-gray-900 text-white p-4 rounded-[12px] text-lg relative">
+        <input type="text" id="display"readonly class="w-full bg-gray-700 p-6 rounded-lg mb-3 outline-[none] text-right">
+           <button class="my-2 tributton flex items-center gap-2">Trigonometry </button>
+           <div class="trigobuttons bg-gray-800 rounded-lg p-3 mb-2 hidden absolute top-37 left-9">
+                <div class="flex gap-3 mb-2">
+              <button class="w-16 h-12 rounded-xl bg-gray-500 sinbutton">sin</button>
+              <button class="w-16 h-12 rounded-xl bg-gray-500 cosbutton">cos</button>
+              <button class="w-16 h-12 rounded-xl bg-gray-500 tanbutton">tan</button>
+             <button class="w-16 h-12 rounded-xl bg-gray-500 cotbutton">cot</button>
+             
+          </div>
+           <div class="flex gap-3 mb-2">
+               <button class="w-16 h-12 rounded-xl bg-gray-500 ">cosec</button>
+              <button class="w-16 h-12 rounded-xl bg-gray-500 ">sec</button>
+               <button class="w-16 h-12 rounded-xl bg-gray-500 asinbutton">asin</button>
+              <button class="w-16 h-12 rounded-xl bg-gray-500 acosbutton">acos</button>
+              
+           </div>
+           <div class="flex gap-3 mb-2">
+             
+              <button class="w-16 h-12 rounded-xl bg-gray-500 atanbutton">atan</button>
+              <button class="w-16 h-12 rounded-xl bg-gray-500 ">asec</button>
+              <button class="w-16 h-12 rounded-xl bg-gray-500 ">acot</button>
+              <button class="w-16 h-12 rounded-xl bg-gray-500 ">acosec</button>
+           </div>
+           </div>
+            
+        
+          <div class="flex gap-3 mb-2">
+              <button class="w-12 h-12 rounded-4xl bg-gray-500 degbutton">DEG</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500">M+</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500">M-</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500">MR</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500">MC</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500 acbutton">AC</button> 
+          </div>
+         
+          <div class="flex gap-3 mb-2">
+              <button class="w-12 h-12 rounded-4xl bg-gray-500">log</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500">ln</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500">log₂</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500">e</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500">EXP</button>
+              <button class="w-12 h-12 rounded-4xl bg-gray-500 delbutton">DEL</button>
+              
+            </div>
+            <div class="flex gap-3 mb-2">
+                <button class="w-12 h-12 rounded-4xl bg-gray-500">x²</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500">xʸ</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500">ʸ√x</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500">π</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500  plusminusbutton ">+/-</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 operatorbutton">%</button>
+            </div>
+            <div class="flex gap-3 mb-2">
+                <button class="w-12 h-12 rounded-4xl bg-gray-500">!</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500">√</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">7</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">8</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">9</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 operatorbutton">÷</button>
+              
+              
+             
+            </div>
+            <div class="flex gap-3 mb-2">
+                 <button class="w-12 h-12 rounded-4xl bg-gray-500">(</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500">)</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">4</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">5</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">6</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 operatorbutton">×</button>
+            </div>
+            <div class="flex gap-3 mb-2">
+                <button class="w-12 h-12 rounded-4xl bg-gray-500">Rad</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500">Ans</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">1</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">2</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">3</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 operatorbutton">+</button>
+                
+                
+            </div>
+            <div class="flex gap-3 mb-2">
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">0</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 numberbutton">00</button>
+                <button class="w-27 h-12 rounded-4xl bg-gray-500 equalbutton">=</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 decimalbutton">.</button>
+                <button class="w-12 h-12 rounded-4xl bg-gray-500 operatorbutton">-</button>
+             
+           </div>
+    </div>
+ 
+
+
+
+
+
+
+
+
+   <script src="./script.js"></script> 
+ </body>
+ </html>
